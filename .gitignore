@@ -23,7 +23,6 @@ media
 # C extensions
 *.so
 
-# superuser username- Devendra password = asd@123
 # Distribution / packaging
 .Python
 build/
@@ -131,6 +130,9 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+
+#for db config
+.env
 
 # Environments
 .env
