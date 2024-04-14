@@ -143,6 +143,8 @@ ENV/
 env.bak/
 venv.bak/
 
+foodenv/
+
 # Spyder project settings
 .spyderproject
 .spyproject
