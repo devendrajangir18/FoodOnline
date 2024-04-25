@@ -54,6 +54,7 @@ class User(AbstractBaseUser):
     username = models.CharField(max_length=50, unique= True)
     email = models.EmailField(max_length=100, unique=True)
     phone_number = models.CharField(max_length=12, blank=True)
+    role = models.PositiveSmallIntegerField(choices=ROLE_CHOICE, blank=True, null=True)
     
     # Required Fields
     date_joined = models.DateTimeField(auto_now_add=True)
@@ -84,3 +85,5 @@ class User(AbstractBaseUser):
         return True
     
    # next step we need to tell django we are not using your default django model ( edit in setting file)
+
+
